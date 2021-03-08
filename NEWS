@@ -1,0 +1,8 @@
+2.0.1 (2020-03-08)
+ - [Fix] Removed db migration warning messages
+
+2.0.0 (2021-02-05)
+ - [Feature] Compatible with Redmine 3.4 and 4.1
+
+1.0.1 (2021-01-30)
+ - [Fix] Plugin settings now takes effect

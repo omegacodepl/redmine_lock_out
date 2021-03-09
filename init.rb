@@ -11,7 +11,7 @@ Redmine::Plugin.register :redmine_lock_out do
   name 'Lock Out'
   author 'Tomasz Gietek for Omega Code Sp. z o.o.'
   description 'Redmine Plugin that locks timesheet entries for the previous month unless allowed by admin.'
-  version '2.0.1'
+  version '2.0.2'
 
   permission :view_lock_dates, { :redmine_lock_out => :index }
   permission :alter_lock_dates, { :redmine_lock_out => [:lock, :unlock] }

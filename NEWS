@@ -1,5 +1,9 @@
+2.0.2 (2020-03-09)
+ - [Fix] Running migration caused crash(added db if exists check) because of plugin rename
+
 2.0.1 (2020-03-08)
  - [Fix] Removed db migration warning messages
+ - [Change] Plugin renamed from lock_out to redmine_lock_out
 
 2.0.0 (2021-02-05)
  - [Feature] Compatible with Redmine 3.4 and 4.1

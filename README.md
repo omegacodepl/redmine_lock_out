@@ -1,4 +1,4 @@
-# lock_out
+# redmine_lock_out
 
 Redmine plugin that locks previous months time entry. Great for getting better control over billing and timesheets for users.
 
@@ -10,8 +10,7 @@ Redmine plugin that locks previous months time entry. Great for getting better c
 
 ## Requirements
 
-* Redmine 2.x.x
-* Ruby 1.9.3
+* Redmine 3.3+
 
 ## Installation
 

@@ -8,7 +8,7 @@ else
 end
 
 Redmine::Plugin.register :redmine_lock_out do
-  name 'Lock Out'
+  name 'Redmine Lock Out'
   author 'Tomasz Gietek for Omega Code Sp. z o.o.'
   description 'Redmine Plugin that locks timesheet entries for the previous month unless allowed by admin.'
   version '2.0.2'

@@ -23,7 +23,7 @@ module LockOut
       end
 
       def lock_out_date
-        (Time.now.beginning_of_month + ((Setting['plugin_lock_out']['lock_out_day'].to_i - 1)).days).to_date
+        (Time.now.beginning_of_month + ((Setting.plugin_redmine_lock_out[:lock_out_day].to_i - 1)).days).to_date
       end
 
       def month_locked?

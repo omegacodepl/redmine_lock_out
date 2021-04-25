@@ -11,14 +11,14 @@ Redmine::Plugin.register :redmine_lock_out do
   name 'Redmine Lock Out'
   author 'Tomasz Gietek for Omega Code Sp. z o.o.'
   description 'Redmine Plugin that locks timesheet entries for the previous month unless allowed by admin.'
-  version '2.0.2'
+  version '2.0.3'
 
   permission :view_lock_dates, { :redmine_lock_out => :index }
   permission :alter_lock_dates, { :redmine_lock_out => [:lock, :unlock] }
 
   # settings for what day of the month the lockout occurs
   settings :partial => 'lock_out_settings',
-           :default => { 'lock_out_day' => 1 }
+           :default => { :lock_out_day => 1 }
 
   menu :top_menu, :redmine_lock_out, { :controller => 'lock_out', :action => 'index' }, :caption => "Lock out dates", :if => Proc.new { User.current.allowed_to?({ :controller => 'lock_out', :action => 'index' }, nil, :global => true) }
 end

@@ -1,7 +1,11 @@
-2.0.2 (2020-03-09)
+2.0.3 (2021-04-25)
+ - [Fix] Migration IF EXISTS was checking wrong table name
+ - [Fix] Adding spent time was causing exception if plugin settings were never saved
+
+2.0.2 (2021-03-09)
  - [Fix] Running migration caused crash(added db if exists check) because of plugin rename
 
-2.0.1 (2020-03-08)
+2.0.1 (2021-03-08)
  - [Fix] Removed db migration warning messages
  - [Change] Plugin renamed from lock_out to redmine_lock_out
 

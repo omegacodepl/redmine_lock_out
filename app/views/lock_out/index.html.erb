@@ -12,7 +12,7 @@
     <td><%= date.year %></td>
     <td><%= date.month %></td>
     <td><%= image_tag(date.locked ? 'true.png' : 'exclamation.png', :style => "vertical-align:bottom;" )%></td>
-    <td class='buttons'>
+    <td class='buttons lock-buttons'>
       <%= link_to((date.locked ? 'Unlock' : 'Lock'), (date.locked ? unlock_date_path(:year => date.year, :month => date.month) : lock_date_path(:year => date.year, :month => date.month) ), :method => :post) %>
     </td>
   </tr>

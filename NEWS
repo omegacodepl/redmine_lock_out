@@ -1,3 +1,6 @@
+2.0.4 (2023-05-21)
+ - [Feature] Compatible with Redmine 5+
+
 2.0.3 (2021-04-25)
  - [Fix] Migration IF EXISTS was checking wrong table name
  - [Fix] Adding spent time was causing exception if plugin settings were never saved

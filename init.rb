@@ -1,4 +1,6 @@
-require 'lock_out/time_entry_patch'
+require 'redmine'
+
+require_relative './lib/lock_out/time_entry_patch.rb'
 
 if Rails::VERSION::MAJOR >= 5
   version = "#{Rails::VERSION::MAJOR}.#{Rails::VERSION::MINOR}".to_f
@@ -11,7 +13,7 @@ Redmine::Plugin.register :redmine_lock_out do
   name 'Redmine Lock Out'
   author 'Tomasz Gietek for Omega Code Sp. z o.o.'
   description 'Redmine Plugin that locks timesheet entries for the previous month unless allowed by admin.'
-  version '2.0.3'
+  version '2.0.4'
 
   permission :view_lock_dates, { :redmine_lock_out => :index }
   permission :alter_lock_dates, { :redmine_lock_out => [:lock, :unlock] }
